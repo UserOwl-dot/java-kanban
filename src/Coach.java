@@ -33,9 +33,7 @@ public class Coach {
         if (o == null || getClass() != o.getClass()) return false;
 
         Coach coach = (Coach) o;
-        return Objects.equals(getSurname(), coach.getSurname()) &&
-                Objects.equals(getName(), coach.getName()) &&
-                Objects.equals(getMiddleName(), coach.getMiddleName());
+        return Objects.equals(getSurname(), coach.getSurname()) && Objects.equals(getName(), coach.getName()) && Objects.equals(getMiddleName(), coach.getMiddleName());
     }
 
     @Override
@@ -48,10 +46,6 @@ public class Coach {
 
     @Override
     public String toString() {
-        return "Coach{" +
-                "surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                ", middleName='" + middleName + '\'' +
-                '}';
+        return "Coach{" + "surname='" + surname + '\'' + ", name='" + name + '\'' + ", middleName='" + middleName + '\'' + '}';
     }
 }

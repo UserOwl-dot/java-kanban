@@ -9,7 +9,8 @@ public class TrainingSession {
     //время начала занятия
     private TimeOfDay timeOfDay;
 
-    public TrainingSession(){}
+    public TrainingSession() {
+    }
 
     public TrainingSession(Group group, Coach coach, DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
         this.group = group;

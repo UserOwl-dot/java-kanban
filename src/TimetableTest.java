@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+
 import java.util.TreeMap;
 
 public class TimetableTest {
