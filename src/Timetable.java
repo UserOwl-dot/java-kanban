@@ -23,7 +23,7 @@ public class Timetable {
     }
 
     public TrainingSession getTrainingSessionsForDayAndTime(DayOfWeek dayOfWeek, TimeOfDay timeOfDay) {
-        TreeMap<TimeOfDay, TrainingSession> trainingSessionsForDay = timetable.getOrDefault(dayOfWeek, new TreeMap<>());
+        Map<TimeOfDay, TrainingSession> trainingSessionsForDay = timetable.getOrDefault(dayOfWeek, new TreeMap<>());
         return trainingSessionsForDay.getOrDefault(timeOfDay, null);
         //как реализовать, тоже непонятно, но сложность должна быть О(1)
     }
