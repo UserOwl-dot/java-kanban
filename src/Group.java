@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Group {
     //название группы
     private String title;
@@ -22,5 +24,31 @@ public class Group {
 
     public int getDuration() {
         return duration;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Group group = (Group) o;
+        return getDuration() == group.getDuration() && Objects.equals(getTitle(), group.getTitle()) && getAge() == group.getAge();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hashCode(getTitle());
+        result = 31 * result + Objects.hashCode(getAge());
+        result = 31 * result + getDuration();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "title='" + title + '\'' +
+                ", age=" + age +
+                ", duration=" + duration +
+                '}';
     }
 }
