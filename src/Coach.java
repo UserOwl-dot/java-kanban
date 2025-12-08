@@ -2,11 +2,17 @@ import java.util.Objects;
 
 public class Coach {
 
-    //фамилия
+    /*
+    * фамилия
+    * */
     private String surname;
-    //имя
+    /*
+    * имя
+    */
     private String name;
-    //отчество
+    /*
+     * отчество
+     */
     private String middleName;
 
     public Coach(String surname, String name, String middleName) {
